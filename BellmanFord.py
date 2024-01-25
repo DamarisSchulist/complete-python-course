@@ -1,10 +1,10 @@
-import networkx as nx
+import*networkx as nx
 import matplotlib.pyplot as plt
 import sys
 
 inf = float('inf')
 
-#function that performs Bellman-Ford algorithm on the graph G,with source vertex as source
+*function that performs Bellman-Ford algorithm on the graph G,with source vertex as source
 def bellmanFord(G, source, pos):
 	V = len(G.nodes()) # V denotes the number of vertices in G
 	dist = [] # dist[i] will hold the shortest distance from source to i
@@ -61,3 +61,4 @@ if __name__ == "__main__":
 	pos = DrawGraph(G)
 	bellmanFord(G, source, pos)
 	plt.show()
+ 
